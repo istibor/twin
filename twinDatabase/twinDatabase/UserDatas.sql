@@ -1,6 +1,0 @@
-﻿CREATE TABLE [dbo].[UserDatas]
-(
-	[User_Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
-    [Picture] NVARCHAR(50) NULL, 
-    [Score] DECIMAL(10, 2) NULL
-)
