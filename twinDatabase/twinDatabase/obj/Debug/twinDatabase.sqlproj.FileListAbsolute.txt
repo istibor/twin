@@ -1,0 +1,10 @@
+d:\repos\twinDatabase\twinDatabase\bin\Debug\twinDatabase.dacpac
+d:\repos\twinDatabase\twinDatabase\bin\Debug\twinDatabase.dll
+d:\repos\twinDatabase\twinDatabase\bin\Debug\twinDatabase.pdb
+d:\repos\twinDatabase\twinDatabase\obj\Debug\twinDatabase.dll
+d:\repos\twinDatabase\twinDatabase\obj\Debug\twinDatabase.pdb
+D:\Development\Projects\twin\twinDatabase\twinDatabase\bin\Debug\twinDatabase.dacpac
+D:\Development\Projects\twin\twinDatabase\twinDatabase\bin\Debug\twinDatabase.dll
+D:\Development\Projects\twin\twinDatabase\twinDatabase\bin\Debug\twinDatabase.pdb
+D:\Development\Projects\twin\twinDatabase\twinDatabase\obj\Debug\twinDatabase.dll
+D:\Development\Projects\twin\twinDatabase\twinDatabase\obj\Debug\twinDatabase.pdb

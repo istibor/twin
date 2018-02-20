@@ -1,0 +1,19 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[UserDatas]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column Score in table [dbo].[UserDatas] is currently  DECIMAL (18, 2) NULL but is being changed to  DECIMAL
+         (10, 2) NULL. Data loss could occur.
+
+** User actions
+     Table rebuild
+       [dbo].[UserDatas] (Table)
+
+** Supporting actions
+
+The type for column Score in table [dbo].[UserDatas] is currently  DECIMAL (18, 2) NULL but is being changed to  DECIMAL (10, 2) NULL. Data loss could occur.
+

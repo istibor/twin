@@ -9,6 +9,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 
+using twin.Data;
+using twin.Models;
+using twin.Repositories;
+using Microsoft.AspNetCore.Identity;
+
 namespace twin
 {
     public class Startup
@@ -22,9 +27,15 @@ namespace twin
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
-            //services.AddDbContext<TwinContext>(options =>
-            //    options.UseSqlServer(Configuration.GetConnectionString("TwinDatabase")));
+        {            
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("twinConnString")));
+
+            services.AddIdentity<User, IdentityRole<int>>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+
+            services.AddScoped<IUserRepository, UserRepository>();
 
             services.AddMvc();
         }
@@ -46,6 +57,8 @@ namespace twin
             }
 
             app.UseStaticFiles();
+
+            app.UseAuthentication();
 
             app.UseMvc(routes =>
             {
